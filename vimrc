@@ -187,3 +187,8 @@ compiler ruby
 
 " NERD_tree: don't hijack netrw.
 let NERDTreeHijackNetrw=0
+
+" CTAGS
+map <C-[> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+map <A-[> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
