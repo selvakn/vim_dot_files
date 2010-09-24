@@ -1,1 +1,6 @@
 .netrwhist
+*.o
+*.log
+*.bundle
+vim/ruby/command-t/Makefile
+.DS_Store

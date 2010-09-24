@@ -56,7 +56,7 @@ set backspace=indent,eol,start
 map Q gq
 
 " Destroy tabs and trailing whitespace.
-autocmd BufWritePre * :%s/\s\+$//e
+" autocmd BufWritePre * :%s/\s\+$//e
 " autocmd BufWritePre * :retab
 
 
@@ -189,6 +189,7 @@ compiler ruby
 let NERDTreeHijackNetrw=0
 
 " CTAGS
-map <C-[> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
-map <A-[> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
+
+" map <C-[> :tab split<CR>:exec("tag ".expand("<cword>"))<CR>
+" map <A-[> :vsp <CR>:exec("tag ".expand("<cword>"))<CR>
 
