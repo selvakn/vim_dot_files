@@ -144,7 +144,8 @@ vim_plugin_task "autoclose",        "http://github.com/vim-scripts/AutoClose.git
 vim_plugin_task "markdown",         "http://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "http://github.com/tsaleh/vim-align.git"
 vim_plugin_task "unimpaired",       "http://github.com/tpope/vim-unimpaired.git"
-
+vim_plugin_task "ruby_focused_unit_test_vim", "/tmp/ruby_focused_unit_test_vim"
+vim_plugin_task "bufexplorer",      "http://www.vim.org/scripts/download_script.php?src_id=14208"
 
 vim_plugin_task "command_t",        "http://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
