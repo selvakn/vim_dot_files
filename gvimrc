@@ -1,5 +1,7 @@
 
 if has("gui_macvim")
+  set guifont=Monaco:h13.00
+
   " Fullscreen takes up entire screen
   set fuoptions=maxhorz,maxvert
 
@@ -16,13 +18,19 @@ if has("gui_macvim")
 
   " Command-/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle<CR>
+
+  " Command-R for Run Focused Test"
+  map <D-r> :RunAllRubyTests<CR>
+  map <D-R> :RunRubyFocusedUnitTest<CR>
+  map <D-C> :RunRubyFocusedContext<CR>
+
 endif
 
 " Start without the toolbar
 set guioptions-=T
 
 " Default gui color scheme
-color molokai
+color wombat
 
 " ConqueTerm wrapper
 function StartTerm()
