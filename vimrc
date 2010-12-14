@@ -12,6 +12,13 @@ set softtabstop=2
 set expandtab
 set list listchars=tab:\ \ ,trail:·
 
+" * Window Splits
+" Open new horizontal windows below.
+set splitbelow
+" Open new vertical windows to the right.
+set splitright
+
+
 " Searching
 set hlsearch
 set incsearch
@@ -54,6 +61,9 @@ function s:setupMarkup()
   call s:setupWrapping()
   map <buffer> <Leader>p :Mm <CR>
 endfunction
+
+" History.
+set history=100
 
 " make and python use real tabs
 au FileType make                                     set noexpandtab
