@@ -149,6 +149,7 @@ vim_plugin_task "searchfold",       "http://github.com/vim-scripts/searchfold.vi
 vim_plugin_task "irblack",          "http://github.com/wgibbs/vim-irblack.git"
 vim_plugin_task "ruby_focused_unit_test_vim", "https://github.com/drewolson/ruby_focused_unit_test_vim.git"
 vim_plugin_task "bufexplorer",      "http://www.vim.org/scripts/download_script.php?src_id=14208"
+vim_plugin_task "coffee-script",    "http://github.com/kchmck/vim-coffee-script.git"
 
 vim_plugin_task "command_t",        "http://github.com/wincent/Command-T.git" do
 
