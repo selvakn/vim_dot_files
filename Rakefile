@@ -128,6 +128,7 @@ vim_plugin_task "git",              "http://github.com/tpope/vim-git.git"
 vim_plugin_task "haml",             "http://github.com/tpope/vim-haml.git"
 vim_plugin_task "indent_object",    "http://github.com/michaeljsmith/vim-indent-object.git"
 vim_plugin_task "javascript",       "http://github.com/pangloss/vim-javascript.git"
+vim_plugin_task "jslint",           "http://github.com/hallettj/jslint.vim.git"
 vim_plugin_task "markdown_preview", "http://github.com/robgleeson/vim-markdown-preview.git"
 vim_plugin_task "nerdtree",         "http://github.com/scrooloose/nerdtree.git"
 vim_plugin_task "nerdcommenter",    "http://github.com/scrooloose/nerdcommenter.git"
@@ -141,11 +142,11 @@ vim_plugin_task "rails",            "http://github.com/tpope/vim-rails.git"
 vim_plugin_task "rspec",            "http://github.com/taq/vim-rspec.git"
 vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.php?src_id=9865"
 vim_plugin_task "snipmate",         "http://github.com/msanders/snipmate.vim.git"
-vim_plugin_task "delimitmate",      "http://github.com/Raimondi/delimitMate.git"
 vim_plugin_task "markdown",         "http://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "http://github.com/tsaleh/vim-align.git"
 vim_plugin_task "unimpaired",       "http://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "searchfold",       "http://github.com/vim-scripts/searchfold.vim.git"
+vim_plugin_task "irblack",          "http://github.com/wgibbs/vim-irblack.git"
 vim_plugin_task "ruby_focused_unit_test_vim", "https://github.com/drewolson/ruby_focused_unit_test_vim.git"
 vim_plugin_task "bufexplorer",      "http://www.vim.org/scripts/download_script.php?src_id=14208"
 
@@ -218,6 +219,7 @@ task :clean do
   system "git clean -dfx"
 end
 
+desc "Pull the latest"
 task :pull do
   system "git pull"
 end
@@ -227,5 +229,6 @@ task :default => [
   :link_vimrc
 ]
 
+desc "Clear out all build artifacts and rebuild the latest Janus"
 task :upgrade => [:clean, :pull, :default]
 
