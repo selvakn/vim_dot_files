@@ -141,6 +141,7 @@ vim_plugin_task "textile",          "http://github.com/timcharper/textile.vim.gi
 vim_plugin_task "rails",            "http://github.com/tpope/vim-rails.git"
 vim_plugin_task "rspec",            "http://github.com/taq/vim-rspec.git"
 vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.php?src_id=9865"
+<<<<<<< HEAD
 vim_plugin_task "snipmate",         "http://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "markdown",         "http://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "http://github.com/tsaleh/vim-align.git"
@@ -148,6 +149,8 @@ vim_plugin_task "unimpaired",       "http://github.com/tpope/vim-unimpaired.git"
 vim_plugin_task "searchfold",       "http://github.com/vim-scripts/searchfold.vim.git"
 vim_plugin_task "irblack",          "http://github.com/wgibbs/vim-irblack.git"
 vim_plugin_task "ruby_focused_unit_test_vim", "https://github.com/drewolson/ruby_focused_unit_test_vim.git"
+vim_plugin_task "endwise",          "http://github.com/tpope/vim-endwise.git"
+vim_plugin_task "syntastic",        "http://github.com/scrooloose/syntastic.git"
 vim_plugin_task "bufexplorer",      "http://www.vim.org/scripts/download_script.php?src_id=14208"
 vim_plugin_task "vim-coffee-script","http://github.com/kchmck/vim-coffee-script.git"
 
@@ -195,11 +198,11 @@ end
 vim_plugin_task "molokai" do
   sh "curl http://www.vim.org/scripts/download_script.php?src_id=9750 > colors/molokai.vim"
 end
-vim_plugin_task "mustasche" do
+vim_plugin_task "mustache" do
   sh "curl http://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
 end
 vim_plugin_task "vwilight" do
-  sh "curl http://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
+  sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
 end
 
 desc "Update the documentation"
