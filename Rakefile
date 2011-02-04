@@ -141,7 +141,6 @@ vim_plugin_task "textile",          "http://github.com/timcharper/textile.vim.gi
 vim_plugin_task "rails",            "http://github.com/tpope/vim-rails.git"
 vim_plugin_task "rspec",            "http://github.com/taq/vim-rspec.git"
 vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.php?src_id=9865"
-<<<<<<< HEAD
 vim_plugin_task "snipmate",         "http://github.com/msanders/snipmate.vim.git"
 vim_plugin_task "markdown",         "http://github.com/tpope/vim-markdown.git"
 vim_plugin_task "align",            "http://github.com/tsaleh/vim-align.git"
