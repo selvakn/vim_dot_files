@@ -120,47 +120,45 @@ def vim_plugin_task(name, repo=nil)
   task :default => name
 end
 
-vim_plugin_task "ack.vim",          "http://github.com/mileszs/ack.vim.git"
-vim_plugin_task "color-sampler",    "http://www.vim.org/scripts/download_script.php?src_id=12179"
+
+vim_plugin_task "ack.vim",          "git://github.com/mileszs/ack.vim.git"
+vim_plugin_task "color-sampler",    "git://github.com/vim-scripts/Color-Sampler-Pack.git"
 vim_plugin_task "conque",           "http://conque.googlecode.com/files/conque_1.1.tar.gz"
-vim_plugin_task "fugitive",         "http://github.com/tpope/vim-fugitive.git"
-vim_plugin_task "git",              "http://github.com/tpope/vim-git.git"
-vim_plugin_task "haml",             "http://github.com/tpope/vim-haml.git"
-vim_plugin_task "indent_object",    "http://github.com/michaeljsmith/vim-indent-object.git"
-vim_plugin_task "javascript",       "http://github.com/pangloss/vim-javascript.git"
-vim_plugin_task "jslint",           "http://github.com/hallettj/jslint.vim.git"
-vim_plugin_task "markdown_preview", "http://github.com/robgleeson/vim-markdown-preview.git"
-vim_plugin_task "nerdtree",         "http://github.com/wycats/nerdtree.git"
-vim_plugin_task "nerdcommenter",    "http://github.com/ddollar/nerdcommenter.git"
-vim_plugin_task "surround",         "http://github.com/tpope/vim-surround.git"
-vim_plugin_task "taglist",          "http://vim.sourceforge.net/scripts/download_script.php?src_id=7701"
-vim_plugin_task "vividchalk",       "http://github.com/tpope/vim-vividchalk.git"
-vim_plugin_task "supertab",         "http://github.com/ervandew/supertab.git"
-vim_plugin_task "cucumber",         "http://github.com/tpope/vim-cucumber.git"
-vim_plugin_task "textile",          "http://github.com/timcharper/textile.vim.git"
-vim_plugin_task "rails",            "http://github.com/tpope/vim-rails.git"
-vim_plugin_task "rspec",            "http://github.com/taq/vim-rspec.git"
-vim_plugin_task "zoomwin",          "http://www.vim.org/scripts/download_script.php?src_id=9865"
-vim_plugin_task "snipmate",         "http://github.com/msanders/snipmate.vim.git"
-vim_plugin_task "markdown",         "http://github.com/tpope/vim-markdown.git"
-vim_plugin_task "align",            "http://github.com/tsaleh/vim-align.git"
-vim_plugin_task "unimpaired",       "http://github.com/tpope/vim-unimpaired.git"
-vim_plugin_task "searchfold",       "http://github.com/vim-scripts/searchfold.vim.git"
-vim_plugin_task "irblack",          "http://github.com/wgibbs/vim-irblack.git"
-vim_plugin_task "ruby_focused_unit_test_vim", "https://github.com/drewolson/ruby_focused_unit_test_vim.git"
-vim_plugin_task "endwise",          "http://github.com/tpope/vim-endwise.git"
-vim_plugin_task "syntastic",        "http://github.com/scrooloose/syntastic.git"
-vim_plugin_task "bufexplorer",      "http://www.vim.org/scripts/download_script.php?src_id=14208"
-vim_plugin_task "vim-coffee-script","http://github.com/kchmck/vim-coffee-script.git"
+vim_plugin_task "fugitive",         "git://github.com/tpope/vim-fugitive.git"
+vim_plugin_task "git",              "git://github.com/tpope/vim-git.git"
+vim_plugin_task "haml",             "git://github.com/tpope/vim-haml.git"
+vim_plugin_task "indent_object",    "git://github.com/michaeljsmith/vim-indent-object.git"
+vim_plugin_task "javascript",       "git://github.com/pangloss/vim-javascript.git"
+vim_plugin_task "jslint",           "git://github.com/hallettj/jslint.vim.git"
+vim_plugin_task "markdown_preview", "git://github.com/robgleeson/vim-markdown-preview.git"
+vim_plugin_task "nerdtree",         "git://github.com/wycats/nerdtree.git"
+vim_plugin_task "nerdcommenter",    "git://github.com/ddollar/nerdcommenter.git"
+vim_plugin_task "surround",         "git://github.com/tpope/vim-surround.git"
+vim_plugin_task "taglist",          "git://github.com/vim-scripts/taglist.vim.git"
+vim_plugin_task "vividchalk",       "git://github.com/tpope/vim-vividchalk.git"
+vim_plugin_task "supertab",         "git://github.com/ervandew/supertab.git"
+vim_plugin_task "cucumber",         "git://github.com/tpope/vim-cucumber.git"
+vim_plugin_task "textile",          "git://github.com/timcharper/textile.vim.git"
+vim_plugin_task "rails",            "git://github.com/tpope/vim-rails.git"
+vim_plugin_task "rspec",            "git://github.com/taq/vim-rspec.git"
+vim_plugin_task "zoomwin",          "git://github.com/vim-scripts/ZoomWin.git"
+vim_plugin_task "snipmate",         "git://github.com/msanders/snipmate.vim.git"
+vim_plugin_task "markdown",         "git://github.com/tpope/vim-markdown.git"
+vim_plugin_task "align",            "git://github.com/tsaleh/vim-align.git"
+vim_plugin_task "unimpaired",       "git://github.com/tpope/vim-unimpaired.git"
+vim_plugin_task "searchfold",       "git://github.com/vim-scripts/searchfold.vim.git"
+vim_plugin_task "endwise",          "git://github.com/tpope/vim-endwise.git"
+vim_plugin_task "irblack",          "git://github.com/wgibbs/vim-irblack.git"
+vim_plugin_task "vim-coffee-script","git://github.com/kchmck/vim-coffee-script.git"
+vim_plugin_task "syntastic",        "git://github.com/scrooloose/syntastic.git"
 
-vim_plugin_task "command_t",        "http://github.com/wincent/Command-T.git" do
-
+vim_plugin_task "command_t",        "git://github.com/wincent/Command-T.git" do
   sh "find ruby -name '.gitignore' | xargs rm"
   Dir.chdir "ruby/command-t" do
-    if `rvm > /dev/null 2>&1` && $?.exitstatus == 0
+    if File.exists?("/usr/bin/ruby") # prefer system rubies
+      sh "/usr/bin/ruby extconf.rb"
+    elsif `rvm > /dev/null 2>&1` && $?.exitstatus == 0
       sh "rvm system ruby extconf.rb"
-    else
-      sh "/usr/bin/ruby extconf.rb" # assume /usr/bin/ruby is system ruby
     end
     sh "make clean && make"
   end
@@ -195,10 +193,13 @@ vim_plugin_task "janus_themes" do
 end
 
 vim_plugin_task "molokai" do
-  sh "curl http://www.vim.org/scripts/download_script.php?src_id=9750 > colors/molokai.vim"
+  sh "curl https://github.com/mrtazz/molokai.vim/raw/master/colors/molokai.vim > colors/molokai.vim"
 end
 vim_plugin_task "mustache" do
-  sh "curl http://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
+  sh "curl https://github.com/defunkt/mustache/raw/master/contrib/mustache.vim > syntax/mustache.vim"
+  File.open(File.expand_path('../ftdetect/mustache.vim', __FILE__), 'w') do |file|
+    file << "au BufNewFile,BufRead *.mustache        setf mustache"
+  end
 end
 vim_plugin_task "vwilight" do
   sh "curl https://gist.github.com/raw/796172/724c7ca237a7f6b8d857c4ac2991cfe5ffb18087/vwilight.vim > colors/vwilight.vim"
