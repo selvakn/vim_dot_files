@@ -1,4 +1,3 @@
-
 if has("gui_macvim")
   set guifont=Monaco:h13.00
 
@@ -21,6 +20,8 @@ if has("gui_macvim")
 
   " Command-/ to toggle comments
   map <D-/> <plug>NERDCommenterToggle<CR>
+  imap <D-/> <Esc><plug>NERDCommenterToggle<CR>i
+
 
   " Command-R for Run Focused Test"
   map <D-r> :RunAllRubyTests<CR>
