@@ -25,8 +25,11 @@ if has("gui_macvim")
 
   " Command-R for Run Focused Test"
   map <D-r> :RunAllRubyTests<CR>
+  imap <D-r> <Esc>:RunAllRubyTests<CR>
   map <D-R> :RunRubyFocusedUnitTest<CR>
+  imap <D-R> <Esc>:RunRubyFocusedUnitTest<CR>
   map <D-C> :RunRubyFocusedContext<CR>
+  imap <D-C> <Esc>:RunRubyFocusedContext<CR>
 
   " Command-][ to increase/decrease indentation
   vmap <D-]> >gv
