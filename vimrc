@@ -68,7 +68,7 @@ endfunction
 
 function s:setupMarkup()
   call s:setupWrapping()
-  map <buffer> <Leader>p :Mm <CR>
+  map <buffer> <Leader>p :Hammer<CR>
 endfunction
 
 " History.
