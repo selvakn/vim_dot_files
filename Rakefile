@@ -158,6 +158,8 @@ vim_plugin_task "scala",            "git://github.com/bdd/vim-scala.git"
 vim_plugin_task "gist-vim",         "git://github.com/mattn/gist-vim.git"
 vim_plugin_task "ruby_focused_unit_test_vim", "git://github.com/drewolson/ruby_focused_unit_test_vim.git"
 vim_plugin_task "buffexplorer",     "https://github.com/markabe/bufexplorer.git"
+vim_plugin_task "vim-textobj-user",     "https://github.com/kana/vim-textobj-user.git"
+vim_plugin_task "vim-textobj-rubyblock",     "https://github.com/nelstrom/vim-textobj-rubyblock.git"
 
 #vim_plugin_task "hammer",           "git://github.com/robgleeson/hammer.vim.git" do
 #  sh "gem install github-markup redcarpet"
