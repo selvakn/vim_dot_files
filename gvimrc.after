@@ -21,4 +21,8 @@ if has("gui_macvim")
   imap <D-M-Right> <Esc> <C-w>l
   map <D-M-Left> <C-w>h
   imap <D-M-Left> <C-w>h
+
+  " Ctags customizations
+  map <Leader>ct :!ctags --extra=+f -R<CR><CR>
+  map <C-\> :tnext<CR>
 end
