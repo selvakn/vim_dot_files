@@ -4,7 +4,7 @@ function die()
     exit 1
 }
 
-for i in $HOME/.vim_selvakn $HOME/.janus $HOME/.gvimrc.after; do
+for i in $HOME/.vim $HOME/.vimrc $HOME/.gvimrc $HOME/.vim_selvakn $HOME/.janus $HOME/.gvimrc.after; do
 if [[ ( -e $i ) || ( -h $i ) ]]; then
 echo "${i} has been renamed to ${i}.old"
     mv "${i}" "${i}.old" || die "Could not move ${i} to ${i}.old"

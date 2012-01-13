@@ -1,10 +1,11 @@
-def ln_nfs(dir)
+def ln_nfs(dir, dot_file = dir)
   pwd = `pwd`.strip
-  `ln -nfs #{pwd}/#{dir} ~/.#{dir}`
+  `ln -nfs #{pwd}/#{dir} ~/.#{dot_file}`
 end
 
 def bootstrap_janus
-  `curl -Lo- http://bit.ly/janus-bootstrap | bash`
+  ln_nfs("janus_vim", "vim")
+  `cd ~/.vim && rake`
 end
 
 def setup_customizations

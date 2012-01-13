@@ -7,3 +7,6 @@
 [submodule "janus/vim-textobj-rubyblock"]
 	path = janus/vim-textobj-rubyblock
 	url = https://github.com/nelstrom/vim-textobj-rubyblock.git
+[submodule "janus_vim"]
+	path = janus_vim
+	url = https://github.com/carlhuda/janus
